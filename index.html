@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+
+
+        <section id="title" class="black-color">
+          <div class="header">
+        <h1 class="heading title-text">Income Tax Calculator Canada</h1>
+        <h4>Find out how much salary you are left with after tax</h4>
+          </div>
+        </section>
+
+        <section id="input" class="white-color">
+            <div class="row">
+              <div class="name col-lg-3">
+                <label>Enter your gross income</label><br>
+                <input placeholder="Enter income" type="number" id="income" />
+              </div>
+              <div class="name col-lg-3">
+                <label>Per</label><br>
+                <select id="per">
+                  <option value="year">year</option>
+                  <option value="monthly">monthly</option>
+                  <option value="bi-weekly">bi-weekly</option>
+                  <option value="weekly">weekly</option>
+                  <option value="daily">daily</option>
+                </select>
+              </div>
+              <div class="name col-lg-3">
+                <label>Where do you work</label>
+                <select id="work"><br>
+                  <option value="British Columbia">British Columbia</option>
+                  <option value="Ontario">Ontario</option>
+                  <option value="Alberta">Alberta</option>
+                  <option value="Quebec">Quebec</option>
+                  <option value="Manitoba">Manitoba</option>
+                  <option value="New Brunswick">New Brunswick</option>
+                  <option value="Yukon">Yukon</option>
+                </select>
+              </div>
+              <div class="name col-lg-3">
+                <label for="calculate">Calculate</label><br>
+                <button id='calculate' class="btn btn-success" onclick="calculate()">Click</button>
+              </div>
+            </div>
+
+        </section>
+
+
+        
+        <section id="per-time">
+          <div class="row per-time-div-one">
+              <div class="col-lg-6">
+              <h3>Salary rate</h3>
+          </div>
+          <div class="col-lg-6">
+              <button type="button" onclick="year()">Year</button>
+              <button type="button" onclick="month()">Month</button>
+              <button type="button" onclick="biweekly()">Biweekly</button>
+              <button type="button" onclick="week()">Week</button>
+              <button type="button" onclick="day()">Day</button>
+              <button type="button" onclick="hour()">Hour</button>
+          </div>
+          </div>
+      </section>
+
+
+
+        <section id="output">
+          <div class="rowTwo">
+            <h3 class="op-text">WithHolding</h3>
+          </div>
+          <div class="salary">
+            <h3>Salary</h3>
+            <h3 id="salary">----</h3>
+          </div>
+          <div class="salary">
+            <h3>Total Tax</h3>
+            <h3 id="totalTax">----</h3>
+          </div>
+          <div class="salary">
+            <h3 class="op-text">NetPay</h3>
+            <h3 id="NetPay" class="op-text">----</h3>
+          </div>
+        </section>
+
+  </body>
+</html>

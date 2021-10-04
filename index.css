@@ -1,0 +1,115 @@
+body {
+  text-align: center;
+  font-family: "Rubik",sans-serif;
+  background-color: #334756;
+}
+
+#title {
+  background-color: black;
+  color: beige;
+  margin: 5px 5%;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.header {
+  padding: 15px;
+  font-family: 'Rubik';
+  margin-left: 3.5%;
+}
+.title-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+
+
+#input {
+  background-color: rgb(227, 225, 241);
+  margin: 10px 5%;
+  padding: 50px 20px 20px 100px;
+  border-radius: 10px;
+  font-family: 'Rubik';
+  font-size: 15px;
+}
+.name {
+  text-align: left;
+}
+input,select {
+  border-radius: 30px;
+  background-color: #F6F6F9;
+  border: 1px solid rgb(156, 33, 156);
+  font-size: 15px;
+  padding: 7px 10px;
+}
+
+label {
+  margin-left: 13px;
+}
+#calculate {
+  border-radius: 30px;
+  margin-left: 12px;
+  width: 100px;
+  border: 0px;
+  font-size: 15px;
+}
+
+#per-time {
+  background-color: black;
+  color: beige;
+  margin: 10px 5%;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px 10px 10px 50px;
+  font-size: 20px;
+}
+
+#per-time button {
+  border-radius: 30px;
+  background-color: #F6F6F9;
+  border: 0;
+  font-size: 15px;
+  padding: 7px 10px;
+  margin: 10px 12px;
+}
+#per-time button:hover {
+  background-color: rgb(227, 225, 241);
+}
+
+
+
+
+#output {
+  background-color: rgb(227, 225, 241);
+  margin: 10px 5%;
+  border-radius: 10px;
+  text-align: left;
+  padding: 50px 50px 50px;
+}
+
+
+.salary {
+  display: flex;
+  margin-top: 20px;
+  /* padding-left: 10px; */
+  padding-right: 10px;
+  justify-content: space-between;
+}
+
+.op-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+
+
+@media (max-width:1024px) {
+  input,select {
+    margin-bottom: 40px;
+  }
+  #calculate {
+    margin-bottom: 40px;
+  }
+}
